@@ -1,0 +1,90 @@
+html, body {
+	margin:0px;
+	padding:0px;
+}
+.container img{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	position: absolute;
+	top: 50px;
+	left: 30px;
+}
+
+.title h1 {
+	color: white;
+	text-shadow: 2px 2px gray;
+}
+
+.loader {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/loadingSmall.png");
+	background-size: 1500px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.car1 {
+	background-image: url("../img/car1.png");
+	width: 63px;
+	height: 51px;
+	position: absolute;
+	top:270px;
+	left: 850px;
+	transform: scale(0.7);
+	animation: runCar1 11s ease-in-out forwards;
+}
+
+.car2 {
+	background-image: url("../img/car2.png");
+	width: 68px;
+	height: 56px;
+	position: absolute;
+	top:595px;
+	left: 400px;
+	transform: scale(0.7);
+	animation: runCar2 6s linear forwards;
+}
+
+@keyframes runCar1 {
+	0% {
+		transform: scale(0.7);
+		top:270px;
+		left: 850px;
+	}
+	
+	50% {
+		top:590px;
+		left: 440px;
+	}
+	
+	100% {
+		top:800px;
+		left: 80px;
+		transform: scale(0.8);
+	}
+}
+
+@keyframes runCar2 {
+	0% {
+		transform: scale(0.7);
+		top:367px;
+		left: 10px;
+	}
+	60%{
+		top:495px;
+		left: 240px;
+	}
+	100% {
+		top:695px;
+		left: 530px;
+		transform: scale(0.8);
+	}
+}
