@@ -66,7 +66,7 @@
 	bottom:0px;
 	left: 0px;
 	object-fit: fill;
-	z-index: 3;
+	z-index: 4;
 	margin:0px;
 	padding: 0px;
 }
@@ -78,9 +78,24 @@
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
-    height: 250px;
+    height: 150px;
     position: absolute;
-    bottom: 150px;
+    bottom: 120px;
     left: 800px;
     z-index: 5;
+}
+
+.reflejo {
+	width: 155px;
+	height: 497px;
+	background-image: url("../img/reflejo.png");
+	/*background-position: center bottom;*/
+	background-size: 100%;
+	position: absolute;
+	bottom:140px;
+	left: 317px;
+	object-fit: fill;
+	z-index: 3;
+	margin:0px;
+	padding: 0px;
 }
