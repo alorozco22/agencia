@@ -1,0 +1,86 @@
+.scene1container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	
+}
+
+.coffee{
+	/*background-image: url('../img/coffee.png');
+	width: 100%;
+	
+	top: 0px;
+	left: 0px;*/
+
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/coffee.png");
+	background-position: center bottom;
+	background-size: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	object-fit: fill;
+	z-index: 1;
+	margin:0px;
+	padding: 0px;
+
+}
+
+.bike {
+	background-image: url("../img/bike2.png");
+	width: 134px;
+	height: 152px;
+	position: absolute;
+	bottom:350px;
+	left: 650px;
+	transform: scale(0.7);
+	z-index: 2;
+	animation: runBike 2.3s forwards;
+	animation-delay: 4s;
+}
+
+@keyframes runBike {
+	0% {
+		transform: scale(0.7);
+		bottom:270px;
+		left: 150px;
+	}
+	
+	
+	
+	100% {
+		bottom:350px;
+		left: 650px;
+		transform: scale(0.6);
+	}
+}
+
+.coffeeOver {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/coffeeOver.png");
+	background-position: center bottom;
+	background-size: 100%;
+	position: absolute;
+	bottom:0px;
+	left: 0px;
+	object-fit: fill;
+	z-index: 3;
+	margin:0px;
+	padding: 0px;
+}
+
+
+.cardCoffee {
+	background-color: white;
+    border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    bottom: 150px;
+    left: 800px;
+    z-index: 5;
+}

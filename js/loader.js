@@ -1,6 +1,8 @@
 $(window).on("load", function(){
-	//const myTimeout = setTimeout(ocultarLoader, 6000);
+	// Comentar la siguiente línea si se desea ocultar el loader cuando cargue la página
+	const myTimeout = setTimeout(ocultarLoader, 1000);
 	//ocultarLoader();
+
 
 });
 
